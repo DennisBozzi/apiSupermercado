@@ -1,8 +1,8 @@
-using ApiBozzis.Application.Abstractions.Repositories;
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Application.Abstractions.Repositories;
+using ApiSupermercado.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiBozzis.Infrastructure.Persistence.Repositories;
+namespace ApiSupermercado.Infrastructure.Persistence.Repositories;
 
 internal sealed class UserRepository : IUserRepository
 {

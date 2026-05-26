@@ -1,9 +1,9 @@
-using ApiBozzis.Api.Common;
-using ApiBozzis.Application.Auth;
+using ApiSupermercado.Api.Common;
+using ApiSupermercado.Application.Auth;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiBozzis.Api.Controllers;
+namespace ApiSupermercado.Api.Controllers;
 
 [ApiController]
 [AllowAnonymous]

@@ -1,6 +1,6 @@
 using System.Security.Claims;
 
-namespace ApiBozzis.Api.Common;
+namespace ApiSupermercado.Api.Common;
 
 public static class ClaimsPrincipalExtensions
 {

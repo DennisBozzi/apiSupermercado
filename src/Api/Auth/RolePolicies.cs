@@ -1,8 +1,8 @@
-using ApiBozzis.Api.Common;
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Api.Common;
+using ApiSupermercado.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 
-namespace ApiBozzis.Api.Auth;
+namespace ApiSupermercado.Api.Auth;
 
 public static class RolePolicies
 {

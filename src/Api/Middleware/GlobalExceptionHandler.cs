@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiBozzis.Api.Middleware;
+namespace ApiSupermercado.Api.Middleware;
 
 public sealed class GlobalExceptionHandler : IExceptionHandler
 {
@@ -20,7 +20,7 @@ public sealed class GlobalExceptionHandler : IExceptionHandler
 
         var problem = new ProblemDetails
         {
-            Type = "https://errors.apibozzis/internal",
+            Type = "https://errors.apisupermercado/internal",
             Title = "An unexpected error occurred.",
             Status = StatusCodes.Status500InternalServerError,
             Detail = _env.IsDevelopment() ? exception.Message : null,

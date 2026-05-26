@@ -1,6 +1,6 @@
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Domain.Entities;
 
-namespace ApiBozzis.Application.Users;
+namespace ApiSupermercado.Application.Users;
 
 public sealed record UserResponse(
     Guid Id,

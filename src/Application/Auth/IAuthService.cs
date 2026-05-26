@@ -1,6 +1,6 @@
-using ApiBozzis.Shared.Results;
+using ApiSupermercado.Shared.Results;
 
-namespace ApiBozzis.Application.Auth;
+namespace ApiSupermercado.Application.Auth;
 
 public interface IAuthService
 {

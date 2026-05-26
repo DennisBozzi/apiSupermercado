@@ -26,5 +26,5 @@ ENV ASPNETCORE_URLS=http://+:8080
 ENV ASPNETCORE_ENVIRONMENT=Production
 ENV DOTNET_RUNNING_IN_CONTAINER=true
 
-ENTRYPOINT ["dotnet", "ApiBozzis.Api.dll"]
+ENTRYPOINT ["dotnet", "ApiSupermercado.Api.dll"]
 CMD []

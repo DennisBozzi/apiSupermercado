@@ -1,6 +1,6 @@
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Domain.Entities;
 
-namespace ApiBozzis.Application.Common;
+namespace ApiSupermercado.Application.Common;
 
 public static class DocumentValidator
 {

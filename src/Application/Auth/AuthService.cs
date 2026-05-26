@@ -1,12 +1,12 @@
-using ApiBozzis.Application.Abstractions;
-using ApiBozzis.Application.Abstractions.Auth;
-using ApiBozzis.Application.Abstractions.Repositories;
-using ApiBozzis.Application.Users;
-using ApiBozzis.Domain.Entities;
-using ApiBozzis.Shared.Results;
+using ApiSupermercado.Application.Abstractions;
+using ApiSupermercado.Application.Abstractions.Auth;
+using ApiSupermercado.Application.Abstractions.Repositories;
+using ApiSupermercado.Application.Users;
+using ApiSupermercado.Domain.Entities;
+using ApiSupermercado.Shared.Results;
 using Microsoft.Extensions.Logging;
 
-namespace ApiBozzis.Application.Auth;
+namespace ApiSupermercado.Application.Auth;
 
 internal sealed class AuthService : IAuthService
 {

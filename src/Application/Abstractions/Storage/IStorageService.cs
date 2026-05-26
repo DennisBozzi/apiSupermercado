@@ -1,4 +1,4 @@
-namespace ApiBozzis.Application.Abstractions.Storage;
+namespace ApiSupermercado.Application.Abstractions.Storage;
 
 public sealed record StorageUploadRequest(
     Stream Content,

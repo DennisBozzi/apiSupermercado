@@ -1,13 +1,13 @@
-using ApiBozzis.Infrastructure.Options;
+using ApiSupermercado.Infrastructure.Options;
 using FirebaseAdmin;
 using Google.Apis.Auth.OAuth2;
 
-namespace ApiBozzis.Infrastructure.Firebase;
+namespace ApiSupermercado.Infrastructure.Firebase;
 
 internal static class FirebaseAppFactory
 {
     private static readonly object _lock = new();
-    private const string AppName = "apiBozzis";
+    private const string AppName = "apiSupermercado";
 
     public static FirebaseApp GetOrCreate(FirebaseOptions options)
     {

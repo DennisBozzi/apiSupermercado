@@ -1,4 +1,4 @@
-namespace ApiBozzis.Application.Abstractions.Auth;
+namespace ApiSupermercado.Application.Abstractions.Auth;
 
 public sealed record FirebaseTokenInfo(
     string Uid,

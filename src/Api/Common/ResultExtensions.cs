@@ -1,8 +1,8 @@
-using ApiBozzis.Shared.Results;
+using ApiSupermercado.Shared.Results;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ApiBozzis.Api.Common;
+namespace ApiSupermercado.Api.Common;
 
 public static class ResultExtensions
 {
@@ -20,7 +20,7 @@ public static class ResultExtensions
 
     private static ProblemDetails ToProblem(Error error) => new()
     {
-        Type = $"https://errors.apibozzis/{error.Code}",
+        Type = $"https://errors.apisupermercado/{error.Code}",
         Title = error.Code,
         Detail = error.Message,
         Status = StatusCodeFor(error.Type),

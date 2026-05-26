@@ -1,8 +1,8 @@
-using ApiBozzis.Application.Abstractions;
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Application.Abstractions;
+using ApiSupermercado.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace ApiBozzis.Infrastructure.Persistence;
+namespace ApiSupermercado.Infrastructure.Persistence;
 
 public sealed class AppDbContext : DbContext, IUnitOfWork
 {

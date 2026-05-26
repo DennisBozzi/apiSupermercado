@@ -1,4 +1,4 @@
-namespace ApiBozzis.Domain.Entities;
+namespace ApiSupermercado.Domain.Entities;
 
 public enum AuthProvider
 {

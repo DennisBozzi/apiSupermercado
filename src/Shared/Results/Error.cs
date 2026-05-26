@@ -1,4 +1,4 @@
-namespace ApiBozzis.Shared.Results;
+namespace ApiSupermercado.Shared.Results;
 
 public enum ErrorType
 {

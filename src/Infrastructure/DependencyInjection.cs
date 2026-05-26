@@ -1,16 +1,16 @@
-using ApiBozzis.Application.Abstractions;
-using ApiBozzis.Application.Abstractions.Auth;
-using ApiBozzis.Application.Abstractions.Repositories;
-using ApiBozzis.Application.Abstractions.Storage;
-using ApiBozzis.Infrastructure.Firebase;
-using ApiBozzis.Infrastructure.Options;
-using ApiBozzis.Infrastructure.Persistence;
-using ApiBozzis.Infrastructure.Persistence.Repositories;
+using ApiSupermercado.Application.Abstractions;
+using ApiSupermercado.Application.Abstractions.Auth;
+using ApiSupermercado.Application.Abstractions.Repositories;
+using ApiSupermercado.Application.Abstractions.Storage;
+using ApiSupermercado.Infrastructure.Firebase;
+using ApiSupermercado.Infrastructure.Options;
+using ApiSupermercado.Infrastructure.Persistence;
+using ApiSupermercado.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ApiBozzis.Infrastructure;
+namespace ApiSupermercado.Infrastructure;
 
 public static class DependencyInjection
 {

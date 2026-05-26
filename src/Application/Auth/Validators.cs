@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace ApiBozzis.Application.Auth;
+namespace ApiSupermercado.Application.Auth;
 
 public sealed class GoogleLoginRequestValidator : AbstractValidator<GoogleLoginRequest>
 {

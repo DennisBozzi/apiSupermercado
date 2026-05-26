@@ -1,8 +1,8 @@
-using ApiBozzis.Api.Common;
-using ApiBozzis.Application.Abstractions.Repositories;
+using ApiSupermercado.Api.Common;
+using ApiSupermercado.Application.Abstractions.Repositories;
 using System.Security.Claims;
 
-namespace ApiBozzis.Api.Auth;
+namespace ApiSupermercado.Api.Auth;
 
 public sealed class CurrentUserMiddleware
 {

@@ -1,6 +1,6 @@
-using ApiBozzis.Shared.Results;
+using ApiSupermercado.Shared.Results;
 
-namespace ApiBozzis.Application.Archives;
+namespace ApiSupermercado.Application.Archives;
 
 public interface IArchiveService
 {

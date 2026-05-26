@@ -1,4 +1,4 @@
-namespace ApiBozzis.Infrastructure.Options;
+namespace ApiSupermercado.Infrastructure.Options;
 
 public sealed class FirebaseOptions
 {

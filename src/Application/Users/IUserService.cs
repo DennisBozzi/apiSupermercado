@@ -1,6 +1,6 @@
-using ApiBozzis.Shared.Results;
+using ApiSupermercado.Shared.Results;
 
-namespace ApiBozzis.Application.Users;
+namespace ApiSupermercado.Application.Users;
 
 public interface IUserService
 {

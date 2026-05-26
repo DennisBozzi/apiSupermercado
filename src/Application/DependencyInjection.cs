@@ -1,10 +1,10 @@
-using ApiBozzis.Application.Archives;
-using ApiBozzis.Application.Auth;
-using ApiBozzis.Application.Users;
+using ApiSupermercado.Application.Archives;
+using ApiSupermercado.Application.Auth;
+using ApiSupermercado.Application.Users;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ApiBozzis.Application;
+namespace ApiSupermercado.Application;
 
 public static class DependencyInjection
 {

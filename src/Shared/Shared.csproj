@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>ApiBozzis.Shared</RootNamespace>
-    <AssemblyName>ApiBozzis.Shared</AssemblyName>
+    <RootNamespace>ApiSupermercado.Shared</RootNamespace>
+    <AssemblyName>ApiSupermercado.Shared</AssemblyName>
   </PropertyGroup>
 </Project>

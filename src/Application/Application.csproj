@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <RootNamespace>ApiBozzis.Application</RootNamespace>
-    <AssemblyName>ApiBozzis.Application</AssemblyName>
+    <RootNamespace>ApiSupermercado.Application</RootNamespace>
+    <AssemblyName>ApiSupermercado.Application</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

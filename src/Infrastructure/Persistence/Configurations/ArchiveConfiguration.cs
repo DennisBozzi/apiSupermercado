@@ -1,8 +1,8 @@
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ApiBozzis.Infrastructure.Persistence.Configurations;
+namespace ApiSupermercado.Infrastructure.Persistence.Configurations;
 
 internal sealed class ArchiveConfiguration : IEntityTypeConfiguration<Archive>
 {

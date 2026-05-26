@@ -1,9 +1,9 @@
-using ApiBozzis.Api.Auth;
-using ApiBozzis.Api.Middleware;
+using ApiSupermercado.Api.Auth;
+using ApiSupermercado.Api.Middleware;
 using Microsoft.AspNetCore.Authorization;
-using ApiBozzis.Application;
-using ApiBozzis.Infrastructure;
-using ApiBozzis.Infrastructure.Options;
+using ApiSupermercado.Application;
+using ApiSupermercado.Infrastructure;
+using ApiSupermercado.Infrastructure.Options;
 using DotNetEnv;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -74,7 +74,7 @@ builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
 {
-    o.SwaggerDoc("v1", new() { Title = "apiBozzis", Version = "v1" });
+    o.SwaggerDoc("v1", new() { Title = "apiSupermercado", Version = "v1" });
     o.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
     {
         In = Microsoft.OpenApi.Models.ParameterLocation.Header,
@@ -118,7 +118,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     app.MapScalarApiReference(o =>
     {
-        o.Title = "apiBozzis";
+        o.Title = "apiSupermercado";
         o.OpenApiRoutePattern = "/swagger/v1/swagger.json";
     });
     app.MapGet("/", () => Results.Redirect("/scalar/v1")).ExcludeFromDescription();

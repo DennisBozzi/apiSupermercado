@@ -1,4 +1,4 @@
-namespace ApiBozzis.Api.Middleware;
+namespace ApiSupermercado.Api.Middleware;
 
 public sealed class SecurityHeadersMiddleware
 {

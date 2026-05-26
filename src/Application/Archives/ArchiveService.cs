@@ -1,10 +1,10 @@
-using ApiBozzis.Application.Abstractions;
-using ApiBozzis.Application.Abstractions.Repositories;
-using ApiBozzis.Application.Abstractions.Storage;
-using ApiBozzis.Domain.Entities;
-using ApiBozzis.Shared.Results;
+using ApiSupermercado.Application.Abstractions;
+using ApiSupermercado.Application.Abstractions.Repositories;
+using ApiSupermercado.Application.Abstractions.Storage;
+using ApiSupermercado.Domain.Entities;
+using ApiSupermercado.Shared.Results;
 
-namespace ApiBozzis.Application.Archives;
+namespace ApiSupermercado.Application.Archives;
 
 internal sealed class ArchiveService : IArchiveService
 {

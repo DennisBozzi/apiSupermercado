@@ -1,9 +1,9 @@
-using ApiBozzis.Application.Abstractions.Auth;
-using ApiBozzis.Infrastructure.Options;
+using ApiSupermercado.Application.Abstractions.Auth;
+using ApiSupermercado.Infrastructure.Options;
 using FirebaseAdmin.Auth;
 using Microsoft.Extensions.Options;
 
-namespace ApiBozzis.Infrastructure.Firebase;
+namespace ApiSupermercado.Infrastructure.Firebase;
 
 internal sealed class FirebaseAuthClient : IFirebaseAuthClient
 {

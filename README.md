@@ -1,4 +1,4 @@
-# Backend — apiBozzis
+# Backend — apiSupermercado
 
 Template base de API REST em .NET 10 / ASP.NET Core. Servido em containers, autenticado via Firebase, persistência em PostgreSQL (Neon).
 
@@ -53,7 +53,7 @@ src/
 
 ### Onde colocar o `.env`
 
-Arquivo: **`.env`** na raiz do repositório (mesmo nível do `Dockerfile` e do `apiBozzis.sln`).
+Arquivo: **`.env`** na raiz do repositório (mesmo nível do `Dockerfile` e do `apiSupermercado.sln`).
 
 > Gitignored. **Nunca** commite. Use `.env.example` (já versionado) como referência do shape.
 
@@ -143,8 +143,8 @@ dotnet ef database update -p src/Infrastructure -s src/Api
 ## Docker
 
 ```bash
-docker build -t bozzis-api .
-docker run -p 8080:8080 --env-file .env bozzis-api
+docker build -t supermercado-api .
+docker run -p 8080:8080 --env-file .env supermercado-api
 ```
 
 Imagem final usa `aspnet:10.0-chiseled` rodando como usuário não-root (`$APP_UID`). Multi-stage build (SDK 10 → runtime chiseled). Veja `Dockerfile` na raiz.

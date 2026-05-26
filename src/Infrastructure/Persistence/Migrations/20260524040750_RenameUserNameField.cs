@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace ApiBozzis.Infrastructure.Persistence.Migrations
+namespace ApiSupermercado.Infrastructure.Persistence.Migrations
 {
     /// <inheritdoc />
     public partial class RenameUserNameField : Migration

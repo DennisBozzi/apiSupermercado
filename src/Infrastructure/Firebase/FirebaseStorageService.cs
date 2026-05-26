@@ -1,10 +1,10 @@
-using ApiBozzis.Application.Abstractions.Storage;
-using ApiBozzis.Infrastructure.Options;
+using ApiSupermercado.Application.Abstractions.Storage;
+using ApiSupermercado.Infrastructure.Options;
 using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Storage.V1;
 using Microsoft.Extensions.Options;
 
-namespace ApiBozzis.Infrastructure.Firebase;
+namespace ApiSupermercado.Infrastructure.Firebase;
 
 internal sealed class FirebaseStorageService : IStorageService
 {

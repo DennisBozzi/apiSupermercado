@@ -1,9 +1,9 @@
-using ApiBozzis.Application.Abstractions;
-using ApiBozzis.Application.Abstractions.Repositories;
-using ApiBozzis.Application.Abstractions.Storage;
-using ApiBozzis.Shared.Results;
+using ApiSupermercado.Application.Abstractions;
+using ApiSupermercado.Application.Abstractions.Repositories;
+using ApiSupermercado.Application.Abstractions.Storage;
+using ApiSupermercado.Shared.Results;
 
-namespace ApiBozzis.Application.Users;
+namespace ApiSupermercado.Application.Users;
 
 internal sealed class UserService : IUserService
 {

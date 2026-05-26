@@ -1,6 +1,6 @@
-using ApiBozzis.Application.Users;
+using ApiSupermercado.Application.Users;
 
-namespace ApiBozzis.Application.Auth;
+namespace ApiSupermercado.Application.Auth;
 
 public sealed record GoogleLoginRequest(string IdToken);
 public sealed record MagicLinkSendRequest(string Email, string ContinueUrl);

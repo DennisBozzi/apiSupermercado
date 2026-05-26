@@ -1,4 +1,4 @@
-namespace ApiBozzis.Application.Abstractions;
+namespace ApiSupermercado.Application.Abstractions;
 
 public interface IUnitOfWork
 {

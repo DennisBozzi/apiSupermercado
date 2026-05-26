@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <RootNamespace>ApiBozzis.Api</RootNamespace>
-    <AssemblyName>ApiBozzis.Api</AssemblyName>
-    <UserSecretsId>apibozzis-dev-secrets</UserSecretsId>
+    <RootNamespace>ApiSupermercado.Api</RootNamespace>
+    <AssemblyName>ApiSupermercado.Api</AssemblyName>
+    <UserSecretsId>apisupermercado-dev-secrets</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />

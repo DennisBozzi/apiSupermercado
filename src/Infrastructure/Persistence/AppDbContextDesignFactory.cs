@@ -2,7 +2,7 @@ using DotNetEnv;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace ApiBozzis.Infrastructure.Persistence;
+namespace ApiSupermercado.Infrastructure.Persistence;
 
 // Used by `dotnet ef`. Loads .env here because Program.cs isn't executed at
 // design time. No fallback connection string — fail fast over silently writing

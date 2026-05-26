@@ -1,6 +1,6 @@
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Domain.Entities;
 
-namespace ApiBozzis.Application.Abstractions.Repositories;
+namespace ApiSupermercado.Application.Abstractions.Repositories;
 
 public interface IUserRepository
 {

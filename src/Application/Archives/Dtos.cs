@@ -1,6 +1,6 @@
-using ApiBozzis.Domain.Entities;
+using ApiSupermercado.Domain.Entities;
 
-namespace ApiBozzis.Application.Archives;
+namespace ApiSupermercado.Application.Archives;
 
 public sealed record ArchiveResponse(
     Guid Id,

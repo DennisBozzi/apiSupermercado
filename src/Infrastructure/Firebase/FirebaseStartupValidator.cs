@@ -1,9 +1,9 @@
-using ApiBozzis.Infrastructure.Options;
+using ApiSupermercado.Infrastructure.Options;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace ApiBozzis.Infrastructure.Firebase;
+namespace ApiSupermercado.Infrastructure.Firebase;
 
 // Fails the host startup if the Firebase credential can't be exchanged for a
 // token. Without this, the first auth request would hang for ~100s on the

@@ -1,7 +1,7 @@
-using ApiBozzis.Application.Common;
+using ApiSupermercado.Application.Common;
 using FluentValidation;
 
-namespace ApiBozzis.Application.Users;
+namespace ApiSupermercado.Application.Users;
 
 public sealed class UpdateProfileRequestValidator : AbstractValidator<UpdateProfileRequest>
 {
