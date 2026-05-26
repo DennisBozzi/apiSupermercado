@@ -1,0 +1,39 @@
+# Build outputs
+**/bin/
+**/obj/
+**/out/
+**/publish/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userprefs
+
+# Logs
+*.log
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Firebase / Google credentials (kept just in case anyone saves them locally)
+firebase-adminsdk-*.json
+serviceAccount*.json
+google-credentials*.json
+
+# Dev secrets
+appsettings.*.local.json
+appsettings.Production.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+*.coverage
+TestResults/
