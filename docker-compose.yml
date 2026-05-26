@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: apisupermercado-api:dev
+    container_name: apisupermercado-api
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
