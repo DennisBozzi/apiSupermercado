@@ -10,3 +10,27 @@ services:
     ports:
       - "8080:8080"
     restart: unless-stopped
+
+  migrator:
+    image: mcr.microsoft.com/dotnet/sdk:10.0
+    profiles: ["tools"]
+    working_dir: /src
+    volumes:
+      - .:/src
+      - dotnet-home:/root/.dotnet
+      - nuget-cache:/root/.nuget
+    env_file:
+      - .env
+    entrypoint:
+      - bash
+      - -c
+      - |
+        set -e
+        export PATH="$$PATH:/root/.dotnet/tools"
+        command -v dotnet-ef >/dev/null 2>&1 || dotnet tool install -g dotnet-ef >/dev/null
+        dotnet ef "$$@" -p src/Infrastructure -s src/Api
+      - bash
+
+volumes:
+  dotnet-home:
+  nuget-cache:
