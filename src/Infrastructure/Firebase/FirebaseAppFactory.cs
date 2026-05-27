@@ -32,9 +32,7 @@ internal static class FirebaseAppFactory
         // Prefer file path: avoids env-var parsing issues with the JSON payload.
         if (!string.IsNullOrWhiteSpace(options.CredentialsPath))
         {
-            var fullPath = Path.IsPathRooted(options.CredentialsPath)
-                ? options.CredentialsPath
-                : Path.GetFullPath(options.CredentialsPath);
+            var fullPath = ResolveCredentialsPath(options.CredentialsPath);
 
             if (!File.Exists(fullPath))
             {
@@ -56,5 +54,34 @@ internal static class FirebaseAppFactory
             "(path to the service-account JSON file — recommended) or Firebase__CredentialsJson " +
             "(inline JSON, single line). Get the file at Firebase Console -> Project Settings -> " +
             "Service accounts -> Generate new private key.");
+    }
+
+    private static string ResolveCredentialsPath(string configuredPath)
+    {
+        if (Path.IsPathRooted(configuredPath))
+            return configuredPath;
+
+        var fromCwd = Path.GetFullPath(configuredPath);
+        if (File.Exists(fromCwd))
+            return fromCwd;
+
+        var dir = new DirectoryInfo(Environment.CurrentDirectory);
+        while (dir is not null)
+        {
+            var hasMarker = dir.GetFiles("*.sln").Length > 0
+                            || Directory.Exists(Path.Combine(dir.FullName, ".git"));
+
+            if (hasMarker)
+            {
+                var fromRoot = Path.GetFullPath(Path.Combine(dir.FullName, configuredPath));
+                if (File.Exists(fromRoot))
+                    return fromRoot;
+                break;
+            }
+
+            dir = dir.Parent;
+        }
+
+        return fromCwd;
     }
 }
