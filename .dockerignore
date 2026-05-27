@@ -19,6 +19,7 @@ tests/
 firebase-adminsdk-*.json
 serviceAccount*.json
 google-credentials*.json
+secrets/
 node_modules/
 README*
 LICENSE*

@@ -29,14 +29,32 @@ internal static class FirebaseAppFactory
 
     public static GoogleCredential BuildCredential(FirebaseOptions options)
     {
-        if (string.IsNullOrWhiteSpace(options.CredentialsJson))
+        // Prefer file path: avoids env-var parsing issues with the JSON payload.
+        if (!string.IsNullOrWhiteSpace(options.CredentialsPath))
         {
-            throw new InvalidOperationException(
-                "Firebase__CredentialsJson is not set. Paste the full service-account JSON " +
-                "from Firebase Console -> Project Settings -> Service accounts -> Generate new private key, " +
-                "as a single line (no surrounding quotes, no actual newlines — the \\n inside private_key stays literal).");
+            var fullPath = Path.IsPathRooted(options.CredentialsPath)
+                ? options.CredentialsPath
+                : Path.GetFullPath(options.CredentialsPath);
+
+            if (!File.Exists(fullPath))
+            {
+                throw new InvalidOperationException(
+                    $"Firebase__CredentialsPath is set but file not found at '{fullPath}'. " +
+                    "Place the service-account JSON at that path or update Firebase__CredentialsPath.");
+            }
+
+            return GoogleCredential.FromFile(fullPath);
         }
 
-        return GoogleCredential.FromJson(options.CredentialsJson);
+        if (!string.IsNullOrWhiteSpace(options.CredentialsJson))
+        {
+            return GoogleCredential.FromJson(options.CredentialsJson);
+        }
+
+        throw new InvalidOperationException(
+            "Firebase credentials not configured. Set either Firebase__CredentialsPath " +
+            "(path to the service-account JSON file — recommended) or Firebase__CredentialsJson " +
+            "(inline JSON, single line). Get the file at Firebase Console -> Project Settings -> " +
+            "Service accounts -> Generate new private key.");
     }
 }

@@ -25,6 +25,10 @@ firebase-adminsdk-*.json
 serviceAccount*.json
 google-credentials*.json
 
+# Local secrets folder (Firebase JSON, etc.) — keep folder, ignore contents
+/secrets/*
+!/secrets/.gitkeep
+
 # Dev secrets
 appsettings.*.local.json
 appsettings.Production.json

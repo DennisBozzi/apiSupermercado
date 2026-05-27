@@ -7,6 +7,10 @@ services:
     container_name: apisupermercado-api
     env_file:
       - .env
+    volumes:
+      # Expose the host secrets/ folder read-only inside the container.
+      # Set Firebase__CredentialsPath=/app/secrets/<file>.json in your .env.
+      - ./secrets:/app/secrets:ro
     ports:
       - "8080:8080"
     restart: unless-stopped
