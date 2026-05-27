@@ -26,8 +26,7 @@ services:
       - -c
       - |
         set -e
-        export PATH="$$PATH:/root/.dotnet/tools"
-        command -v dotnet-ef >/dev/null 2>&1 || dotnet tool install -g dotnet-ef >/dev/null
+        dotnet tool restore >/dev/null
         dotnet ef "$$@" -p src/Infrastructure -s src/Api
       - bash
 
